@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        body:not(#wrap){
+            background: #454D58;
+        }
+        #wrap{
+            margin: 0 auto;
+            width: 1100px;
+            border: 1px solid #555;
+        }
+        p{
+            margin: 30px;
+        }
+        #problem{
+            height: 100px;
+            background: #ccc;
+            overflow: hidden;
+        }
+        #operate{
+            height: 40px;
+            background: #133A61;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        svg {
+            border: 1px solid #ccc;
+            background: white;
+            /* margin: 20px 0 0 150px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="problem">
+            <p>问：房间内有 100 人，每人有 100 块，每分钟随机给另一个人 1 块，最后这个房间内的财富分布怎样？</p>
+        </div>
+        <div id="operate">
+            <button id="exchange">交换</button>
+            <button id="sort">排序</button>
+            <button id="stop">暂停</button>
+            <button id="init">重置</button>
+        </div>
+    </div>
+    <script src="d3.v4.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
